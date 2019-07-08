@@ -11,17 +11,25 @@ function registration() {
 			//Set all variables to empty values.
 			$full_nameerror=$phone_numbererror=$emailerror=$permanent_addresserror=$correspondence_addresserror=$date_of_birtherror=$Name_Sponsorerror=$Address_Sponsorerror=$Universityerror=$Degreeerror=$Courseverror=$passwordmatch=$date_scherror=$Institutionserror=$Certificate_Obtainederror=$area_specialerror=$date_insterror=$date_firsterror=$higher_degreeerror=$mode_studyerror="";
 			$full_name=$phone_number=$email=$permanent_address=$phone=$data_of_birth=$Name_Sponsor=$Address_Sponsor=$University=$Degree=$Course=$data_sch=$Institutions=$Certificate_Obtained=$area_special=$date_inst=$date_first=$higher_degree=$higher_degree=$mode_study="";
-			//Set error messages
+            //Set error messages
+            
+            i
 			if (empty($_POST['full_name'])) {
     		$full_nameerror = "Enter your Full Name.<br>";
 			} else {
 				$full_name = mysqli_real_escape_string($gconnect,galaxy_sanitize($_POST['full_name']));
-			}
+            }
+            
+            if (empty($_POST['full_name'])){
+                
+            }
 			if (empty($_POST['phone_number'])) {
 	    	$phone_numbererror = "Please enter your Phone_number.<br>";
 			} else {
 				$phone_number = mysqli_real_escape_string($gconnect,galaxy_sanitize(ucwords($_POST['phone_number'])));
-			}
+            }
+            
+
 		
 					{ //Display errors
 						$errors = array($full_nameerror);
