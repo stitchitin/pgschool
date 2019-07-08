@@ -10,7 +10,7 @@
 <span class="subheading">WELCOME TO PG FORMS</span>
 <h2 class="mb-3"> <span>FOR GUIDANCE ON </span> <span>APPLICATION</span></h2>
 <p>Click Yes if you want to make application or Next continue  if not what you are looking for</p>
-<p><a href="registration.php" class="btn btn-primary px-4 py-3">Yes</a> <a href="#" class="btn btn-primary px-4 py-3">Next</a></p>
+<p><a href="application.php" class="btn btn-primary px-4 py-3">Yes</a> <a href="#" class="btn btn-primary px-4 py-3">Next</a></p>
 </div>
 </div>
 </div>
@@ -26,7 +26,7 @@
 <div class="col-lg-7 p-5 ftco-wrap ftco-animate">
 <form action="#" class="domain-form d-flex mb-3">
 <div class="form-group domain-name">
-<input type="text" class="form-control name px-4" placeholder="Enter your domain name...">
+<input type="text" class="form-control name px-4" placeholder="Enter form name here...">
 </div>
 <div class="form-group domain-select d-flex">
 <div class="select-wrap">

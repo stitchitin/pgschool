@@ -8,14 +8,13 @@
 <div class="row justify-content-center mb-5 pb-5">
 <div class="col-md-7 text-center heading-section ftco-animate">
 <span class="subheading">PG School</span>
-<h2 class="mb-4">GUIDANCE ON REGISTRATION</h2>
+<h2 class="mb-4">GUIDANCE ON APPLICATION</h2>
 </div>
 </div>
 <div class="row">
 <div class="col-md-12 nav-link-wrap mb-5 pb-md-5 pb-sm-1 ftco-animate">
 <div class="nav ftco-animate nav-pills justify-content-center text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-<a class="nav-link active" id="v-pills-nextgen-tab" data-toggle="pill" href="#v-pills-nextgen" role="tab" aria-controls="v-pills-nextgen" aria-selected="true">Registration Forms</a>
-<a class="nav-link" id="v-pills-performance-tab" data-toggle="pill" href="#v-pills-performance" role="tab" aria-controls="v-pills-performance" aria-selected="false">Add and drop forms</a>
+<a class="nav-link active" id="v-pills-nextgen-tab" data-toggle="pill" href="#v-pills-nextgen" role="tab" aria-controls="v-pills-nextgen" aria-selected="true">Application Forms</a>
 
 </div>
 </div>
@@ -27,10 +26,9 @@
 <img src="../images/undraw_laravel_and_vue_59tp.svg" class="img-fluid" alt="">
 </div>
 <div class="one-half ml-md-5 align-self-center">
-<h2 class="mb-4">Registration forms</h2>
-<p>SPGS Form 004-Registration Form (Bio data), SPGS Form 005-Registration of Courses (Initial), SPGS Form 008-Registration of Courses (Subsequent Years)</p>
-<p>Click the butten to choose the form you want to fill</P>
- <p><a href="choise.php" class="btn btn-primary py-3">Click to here</a></p>
+<h2 class="mb-4">Application forms</h2>
+<p>Click the button to choose the form you want to fill</P>
+ <p><a href="choice.php" class="btn btn-primary py-3">Click to here</a></p>
 </div>
 </div>
 </div>

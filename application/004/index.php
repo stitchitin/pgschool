@@ -48,7 +48,7 @@ body {
 }
 
 h1 {
-  text-align: center;  
+  text-align: center;
 }
 
 input {
@@ -93,7 +93,7 @@ button:hover {
   width: 15px;
   margin: 0 2px;
   background-color: #bbbbbb;
-  border: none;  
+  border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
@@ -119,7 +119,7 @@ hr{
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 <div class="container">
-<a class="navbar-brand" href="http://localhost/cohost/"><img src="https://unizik.edu.ng/wp-content/uploads/2017/02/nauweblogo1.png"></a>
+<a class="navbar-brand" href="http://localhost/pgschool/"><img src="https://unizik.edu.ng/wp-content/uploads/2017/02/nauweblogo1.png"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 <span class="oi oi-menu"></span> Menu
 </button>
@@ -166,7 +166,7 @@ include '../../include/config.php';
 if
     (isset($_POST['full_name'])){
     $full_name = $_POST['full_name'];
-    
+
 }
 if (isset($_POST['phone_number'])){
 $phone_number = $_POST['phone_number'];
@@ -175,7 +175,7 @@ $phone_number = $_POST['phone_number'];
 
   if (isset($_POST['email'])){
     $email = $_POST['email'];
-  } 
+  }
 
    if (isset($_POST['permanent_address'])){
     $permanent_address = $_POST['permanent_address'];
@@ -206,7 +206,7 @@ if (isset($_POST['Address_Sponsor'])){
    if (isset($_POST['Degree'])){
     $Degree = $_POST['Degree'];
    }
-    
+
     if (isset($_POST['Course'])){
         $Course = $_POST['Course'];
     }
@@ -215,7 +215,7 @@ if (isset($_POST['Address_Sponsor'])){
      if (isset($_POST['date_sch'])){
         $date_sch = $_POST['date_sch'];
      }
-   
+
      if (isset($_POST['Institutions'])){
         $Institutions = $_POST['Institutions'];
      }
@@ -239,7 +239,7 @@ if (isset($_POST['Address_Sponsor'])){
        if (isset($_POST['higher_degree'])){
         $higher_degree = $_POST['higher_degree'];
        }
-       
+
        if (isset($_POST['mode_study'])){
         $mode_study = $_POST['mode_study'];
        }
@@ -302,12 +302,12 @@ VALUES (
 
 if (mysqli_query($conn, $sql)) {
     echo"<b style='color:green'>";
-    echo $full_name; 
+    echo $full_name;
     echo" you form has been created successfully ";
     echo"</b>";
 } else {
     echo"<b style='color:red'> ";
-    echo "Error: " .mysqli_error($conn); 
+    echo "Error: " .mysqli_error($conn);
     echo "<b>";
 }
 
@@ -319,7 +319,7 @@ mysqli_close($conn);
 
 
 
-<!-- Begining of the form --> 
+<!-- Begining of the form -->
 <form id="regForm" style="margin-top:-30px"  action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 <div class="tab">
 <div style="text-align:center">
@@ -553,7 +553,7 @@ Area of Specialization:">
 </script> -->
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="20b60bcd3cfe9b2f912c55b7-|49" defer=""></script></body>
 
-<!-- Mirrored from colorlib.com/preview/theme/cohost/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2019 14:26:18 GMT -->
+<!-- Mirrored from colorlib.com/preview/theme/pgschool/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2019 14:26:18 GMT -->
 
 <!--<script>
 var currentTab = 0; // Current tab is set to be the first tab (0)
