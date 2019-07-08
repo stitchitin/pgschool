@@ -8,9 +8,9 @@
 <div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
 <div class="text mt-5">
 <span class="subheading">WELCOME TO PG FORMS</span>
-<h2 class="mb-3"> <span>FOR GUIDANCE ON </span> <span>REGISTRATION</span></h2>
-<p>Click Yes if you want to make registration or Next continue  if not what you are looking for</p>
-<p><a href="registration.php" class="btn btn-primary px-4 py-3">Yes</a> <a href="./../application/index.php" class="btn btn-primary px-4 py-3">Next</a></p>
+<h2 class="mb-3"> <span>FOR GUIDANCE ON </span> <span>APPLICATION</span></h2>
+<p>Click Yes if you want to make application or Next continue  if not what you are looking for</p>
+<p><a href="registration.php" class="btn btn-primary px-4 py-3">Yes</a> <a href="#" class="btn btn-primary px-4 py-3">Next</a></p>
 </div>
 </div>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from colorlib.com/preview/theme/cohost/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2019 14:25:24 GMT -->
+<!-- Mirrored from colorlib.com/preview/theme/pgschool/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2019 14:25:24 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <title>WELCOME TO PG FORMS</title>
@@ -24,7 +24,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 <div class="container">
-<a class="navbar-brand" href="http://localhost/cohost/"><img src="https://unizik.edu.ng/wp-content/uploads/2017/02/nauweblogo1.png"></a>
+<a class="navbar-brand" href="http://localhost/pgschool/"><img src="https://unizik.edu.ng/wp-content/uploads/2017/02/nauweblogo1.png"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 <span class="oi oi-menu"></span> Menu
 </button>
