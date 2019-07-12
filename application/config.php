@@ -1,6 +1,3 @@
-
-
-
 <?php
 {
   $dbhost = 'localhost'; //mysql.rolaaz.com
