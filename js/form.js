@@ -1,4 +1,3 @@
-
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -47,12 +46,18 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false
-      valid = false;
+    // For only required inputs
+    if (y[i].hasAttribute('required')) {
+      // If a field is empty...
+      if (y[i].value == "") {
+        // check if invalid class is already there
+        if (!(y[i].className.includes('invalid'))) {
+          // add an "invalid" class to the field:
+          y[i].className += " invalid";
+        }
+        // and set the current valid status to false
+        valid = false;
+      }
     }
   }
   // If the valid status is true, mark the step as finished and valid:

@@ -1,6 +1,6 @@
-<?php include '../include/header.php'; ?>
+<?php include '../include/header.php';?>
 
-<!--<div class="hero-wrap js-fullheight">
+<div class="hero-wrap js-fullheight">
 <div class="overlay"></div>
 <div class="container-fluid px-0">
 <div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-end">
@@ -26,7 +26,7 @@
 <div class="col-lg-7 p-5 ftco-wrap ftco-animate">
 <form action="#" class="domain-form d-flex mb-3">
 <div class="form-group domain-name">
-<input type="text" class="form-control name px-4" placeholder="Enter your domain name...">
+<input type="text" class="form-control name px-4" placeholder="Enter form name here...">
 </div>
 <div class="form-group domain-select d-flex">
 <div class="select-wrap">
@@ -53,5 +53,4 @@
 </div>
 </div>
 </section>
--->
 <?php include '../include/footer.php'; ?>

@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-  text-align: center;  
+  text-align: center;
 }
 
 input {
@@ -66,7 +66,7 @@ button:hover {
   width: 15px;
   margin: 0 2px;
   background-color: #bbbbbb;
-  border: none;  
+  border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
@@ -845,7 +845,7 @@ if (mysqli_query($conn, $sql)) {
     echo"</b>";
 } else {
     echo"<b style='color:red'> ";
-    echo "Error: " .mysqli_error($conn); 
+    echo "Error: " .mysqli_error($conn);
     echo "<b>";
 }
 
@@ -857,7 +857,7 @@ mysqli_close($conn);
 
 
 
-<!-- Begining of the form --> 
+<!-- Begining of the form -->
 <form id="regForm" style="margin-top:-30px"  action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 <div class="tab">
 <div style="text-align:center">
