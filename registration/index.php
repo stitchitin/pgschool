@@ -1,6 +1,6 @@
-<?php include_once "../include/header.php" ?>
+<?php include '../include/header.php'; ?>
 
-<div class="hero-wrap js-fullheight">
+<!--<div class="hero-wrap js-fullheight">
 <div class="overlay"></div>
 <div class="container-fluid px-0">
 <div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-end">
@@ -53,5 +53,5 @@
 </div>
 </div>
 </section>
-
-<?php include_once "../include/footer.php" ?>
+-->
+<?php include '../include/footer.php'; ?>

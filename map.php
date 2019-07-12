@@ -31,7 +31,7 @@
 <div class="collapse navbar-collapse" id="ftco-nav">
 <ul class="navbar-nav ml-auto">
 
-<li class="nav-item cta"><a href="map.php" class="nav-link"><span>Map</span></a>
+<li class="nav-item cta"><a href="http://localhost/pgschool/map.php" class="nav-link"><span>Map</span></a>
 </li>
 </ul>
 </div>
@@ -39,59 +39,60 @@
 </nav>
 
 
-<div class="hero-wrap js-fullheight">
-<div class="overlay"></div>
-<div class="container-fluid px-0">
-<div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-end">
-<img class="one-third js-fullheight align-self-end order-md-last img-fluid" src="images/undraw_pair_programming_njlp.svg" alt="">
-<div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
-<div class="text mt-5">
-<span class="subheading">WELCOME TO PG FORMS</span>
-<h2 class="mb-3"> <span>Hi</span> <span></span></h2>
-<p>I will gide you make a write choice  To the form you want to fill Say yes to Journing with me</p>
-<p><a href="registration/index.php" class="btn btn-primary px-4 py-3">Yes</a> </p>
+<div style="margin-top:150px; margin-left:10px;" class="row mb-12">
+
+
+<div class="col-md">
+<div class="ftco-footer-widget mb-6">
+<h2 class="ftco-heading-2">Navigational</h2>
+<ul class="list-unstyled">
+<li><a href="#" class="py-2 d-block"><strong>GUIDANCE ON REGISTRATION/ADD AND DROP RELATED</strong></a>
+<ul>
+<li><a href="#" class="py-2 d-block"><b>REGISTRATION FORMS</b></a>
+<ul>
+<li><a href="#" class="py-2 d-block"><i>SPGS Form 004-Registration Form (Bio data) </i></a></li>
+<li><a href="#" class="py-2 d-block"><i>SPGS Form 005-Registration of Courses (Initial)</i></a></li>
+<li><a href="#" class="py-2 d-block"><i>SPGS Form 008-Registration of Courses (Subsequent Years)</i></a></li>
+</ul>
+
+<li><a href="#" class="py-2 d-block"><b>ADD AND DROP FORMS</b></a>
+<ul>
+<li><a href="#" class="py-2 d-block"><i>SPGS Form 012</i></a></li>
+
+</ul>
+
+</li>
+</li>
+</ul>
+</li>
+
+
+<li><a href="#" class="py-2 d-block"><strong>GUIDANCE ON APPLICATION RELATED</strong></a>
+<ul>
+<li><a href="#" class="py-2 d-block"><b>APPLICATION FORMS</b></a>
+<ul>
+<li><a href="#" class="py-2 d-block"><i>SPGS Form 008</i></a></li>
+</ul>
+
+
+</li>
+<ul>
+</li>
+
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+
+<div class="block-23 mb-3">
+
 </div>
 </div>
 </div>
 </div>
-</div>
-<section class="ftco-domain">
-<div class="container">
-<div class="row d-flex align-items-center">
-<div class="col-lg-5 heading-white mb-4 mb-sm-4 mb-lg-0 ftco-animate">
-<h2>Search Here</h2>
-<p>Find Your form</p>
-</div>
-<div class="col-lg-7 p-5 ftco-wrap ftco-animate">
-<form action="#" class="domain-form d-flex mb-3">
-<div class="form-group domain-name">
-<input type="text" class="form-control name px-4" placeholder="Enter your domain name...">
-</div>
-<div class="form-group domain-select d-flex">
-<div class="select-wrap">
-<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-<select name="" id="" class="form-control">
-<option value=""></option>
-<option value=""></option>
-<option value=""></option>
-<option value=""></option>
-<option value=""></option>
-</select>
-</div>
-<input type="submit" class="search-domain btn btn-primary text-center" value="Search">
-</div>
-</form>
-<p class="domain-price mt-2">
-<span><small></small> </span>
-<span><small></small> </span>
-<span><small></small> </span>
-<span><small></small> </span>
-<span><small></small> </span>
-</p>
-</div>
-</div>
-</div>
-</section>
+
+
 
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 <script src="js/jquery.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>

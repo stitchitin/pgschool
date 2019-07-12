@@ -21,5 +21,6 @@ $username = "root";
 $password = "startman";
 $dbname = "pg_school";
 
+define(_SITE_URL, "http://localhost/pgschool");
 
 ?>
