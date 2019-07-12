@@ -737,7 +737,7 @@
           <div class="row block-9">
             <div class="col-md-9 pr-md-9">
               <button type="button" class="btn btn-primary py-3 px-5" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-              <button type="submit" class="btn btn-primary py-3 px-5" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              <button type="button" class="btn btn-primary py-3 px-5" id="nextBtn" onclick="nextPrev(1)">Next</button>
             </div>
           </div>
 
@@ -746,6 +746,7 @@
             <div style="float:right" class="col-md-9 pr-md-9" >
               <!-- Circles which indicates the steps of the form: -->
               <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>
