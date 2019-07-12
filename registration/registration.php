@@ -40,10 +40,11 @@
 <img src="images/undraw_visual_data_b1wx.svg" class="img-fluid" alt="">
 </div>
 <div class="one-half order-first mr-md-5 align-self-center">
-<h2 class="mb-4">Performance VPS hosting</h2>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+<h2 class="mb-4">ADD AND DROP FORMS</h2>
+<p>SPGS Form 012-Add and Drop Form. click to download or fill form</p>
+<p>Click the butten to choose the form you want to fill</P>
 
-<p><a href="#" class="btn btn-primary py-3">Get in touch</a></p>
+<p><a href="adddrop/" class="btn btn-primary py-3">Click to here</a></p>
 </div>
 </div>
 </div>

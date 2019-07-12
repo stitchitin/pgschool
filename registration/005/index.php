@@ -1,4 +1,31 @@
-<?php include '../../include/header.php'; ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>WELCOME TO PG FORMS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
+
+
+
+
+
+<link rel="stylesheet" href="../../css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="../../css/animate.css">
+<link rel="stylesheet" href="../../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../../css/magnific-popup.css">
+<link rel="stylesheet" href="../../css/aos.css">
+<link rel="stylesheet" href="../../css/ionicons.min.css">
+<link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="../../css/jquery.timepicker.css">
+<link rel="stylesheet" href="../../css/flaticon.css">
+<link rel="stylesheet" href="../../css/icomoon.css">
+<link rel="stylesheet" href="../../css/style.css">
+</head>
 
 <style>
 * {
@@ -21,7 +48,7 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: center;  
 }
 
 input {
@@ -66,7 +93,7 @@ button:hover {
   width: 15px;
   margin: 0 2px;
   background-color: #bbbbbb;
-  border: none;
+  border: none;  
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
@@ -89,7 +116,22 @@ hr{
 
 
 
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<div class="container">
+<a class="navbar-brand" href="http://localhost/pgschool/"><img src="https://unizik.edu.ng/wp-content/uploads/2017/02/nauweblogo1.png"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="oi oi-menu"></span> Menu
+</button>
+<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav ml-auto">
 
+<li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Map</span></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
 
 <br>
 <section class="ftco-section contact-section ftco-degree-bg">
@@ -100,10 +142,10 @@ hr{
 </div>
 <div class="w-100"></div>
 <div class="col-md-3">
-<p><span>Registration of Courses (Subsequent Years))</span></p>
+<p><span>REGISTRATION OF COURSES (INITIAL)</span></p>
 </div>
 <div class="col-md-3">
-<p><span>Form NO:</span> <a href="004">SPGS Form 008</a></p>
+<p><span>Form NO:</span> <a href="004">spgs Form 005</a></p>
 </div>
 <div class="col-md-3">
 <p><span>Support:</span> <a href="https://support.unizik.edu.ng"><span class="__cf_email__" data-cfemail="8fe6e1e9e0cff6e0fafdfce6fbeaa1ece0e2">[email&#160;protected]</span></a></p>
@@ -603,7 +645,7 @@ if (!$conn) {
 
 
 
-$sql = "INSERT INTO form008 (
+$sql = "INSERT INTO form005 (
 department,
 faculty,
 session,
@@ -845,7 +887,7 @@ if (mysqli_query($conn, $sql)) {
     echo"</b>";
 } else {
     echo"<b style='color:red'> ";
-    echo "Error: " .mysqli_error($conn);
+    echo "Error: " .mysqli_error($conn); 
     echo "<b>";
 }
 
@@ -857,7 +899,7 @@ mysqli_close($conn);
 
 
 
-<!-- Begining of the form -->
+<!-- Begining of the form --> 
 <form id="regForm" style="margin-top:-30px"  action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 <div class="tab">
 <div style="text-align:center">
@@ -1530,8 +1572,111 @@ mysqli_close($conn);
 
 
 
-<?php include '../../include/footer.php'; ?>
+</section>
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+<script src="../../js/jquery.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/jquery-migrate-3.0.1.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/popper.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/bootstrap.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/jquery.easing.1.3.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/jquery.waypoints.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/jquery.stellar.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/owl.carousel.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/jquery.magnific-popup.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/aos.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/jquery.animateNumber.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/bootstrap-datepicker.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/jquery.timepicker.min.html" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/scrollax.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/google-map.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<script src="../../js/main.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+<!--<script type="20b60bcd3cfe9b2f912c55b7-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script> -->
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="20b60bcd3cfe9b2f912c55b7-|49" defer=""></script></body>
+
+<!-- Mirrored from colorlib.com/preview/theme/pgschool/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2019 14:26:18 GMT -->
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script> 
 
 
 

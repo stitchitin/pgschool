@@ -1,4 +1,3 @@
-
 CREATE TABLE `form004` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `full_name`  varchar(250) NOT NULL,
@@ -23,4 +22,3 @@ CREATE TABLE `form004` (
 
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
    PRIMARY KEY (`id`), UNIQUE(`email`)
-)
