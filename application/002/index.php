@@ -686,33 +686,53 @@
           </div>
 
           <!-- Sixth Area -->
-
           <div class="tab">
             <div style="text-align:center">
-              <h3> OTHER INFO'S</h3>
+              <h3>INSTITUTION(S) ATTENDED WITH DATES AND CERTIFICATES</h3>
             </div>
             <div class="row block-9">
-              <div class="col-md-6 pr-md-5">
-                <div class="form-group">
-                  <label>DATE OF FIRST REGISTRATION FOR HIGHER DEGREE COURSE.</label>
-                  <input type="date" oninput="this.className = ''" class="form-control" name="date_first" placeholder="Date" required="required">
-                </div>
-                <div class="form-group">
-                  <input type="text" oninput="this.className = ''" class="form-control" name="higher_degree" placeholder="HIGHER DEGREE IN VIEW:">
-                </div>
-              </div>
-              <div class="col-md-6 pr-md-5">
-                <div class="form-group">
-                  <label for="mode_study"><strong>MODE OF STUDY</strong></label>
-                  <select class="browser-default custom-select" oninput="this.className = ''" name="mode_study" searchable="Search here.." required>
-                    <option value="" disabled selected>Choose your Mode of Study</option>
-                    <option value="Full Time">FULL TIME  </option>
-                    <option value="Part Time">PART TIME</option>
-                  </select>
-                </div>
+              <div class="form-group">
+                <ul>
+                  <li class="input-group mb-5">
+                    <input type="text" class="form-control" name="institution" placeholder="Institutions:">
+                    <input type="text" class="form-control" name="certObtained" placeholder="Certificate Obtained:">
+                    <input type="text" class="form-control" name="course" placeholder="Course/Subject:">
+                    <input type="text" class="form-control" name="classOfCert" placeholder="Class of Certificate:">
+                    <input type="text" class="form-control" name="date" placeholder="Date:">
+                  </li>
+                  <li class="input-group mb-5">
+                    <input type="text" class="form-control" name="institution" placeholder="Institutions:">
+                    <input type="text" class="form-control" name="certObtained" placeholder="Certificate Obtained:">
+                    <input type="text" class="form-control" name="course" placeholder="Course/Subject:">
+                    <input type="text" class="form-control" name="classOfCert" placeholder="Class of Certificate:">
+                    <input type="text" class="form-control" name="date" placeholder="Date:">
+                  </li>
+                  <li class="input-group mb-5">
+                    <input type="text" class="form-control" name="institution" placeholder="Institutions:">
+                    <input type="text" class="form-control" name="certObtained" placeholder="Certificate Obtained:">
+                    <input type="text" class="form-control" name="course" placeholder="Course/Subject:">
+                    <input type="text" class="form-control" name="classOfCert" placeholder="Class of Certificate:">
+                    <input type="text" class="form-control" name="date" placeholder="Date:">
+                  </li>
+                  <li class="input-group mb-5">
+                    <input type="text" class="form-control" name="institution" placeholder="Institutions:">
+                    <input type="text" class="form-control" name="certObtained" placeholder="Certificate Obtained:">
+                    <input type="text" class="form-control" name="course" placeholder="Course/Subject:">
+                    <input type="text" class="form-control" name="classOfCert" placeholder="Class of Certificate:">
+                    <input type="text" class="form-control" name="date" placeholder="Date:">
+                  </li>
+                  <li class="input-group mb-5">
+                    <input type="text" class="form-control" name="institution" placeholder="Institutions:">
+                    <input type="text" class="form-control" name="certObtained" placeholder="Certificate Obtained:">
+                    <input type="text" class="form-control" name="course" placeholder="Course/Subject:">
+                    <input type="text" class="form-control" name="classOfCert" placeholder="Class of Certificate:">
+                    <input type="text" class="form-control" name="date" placeholder="Date:">
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+
 
           <div class="row block-9">
             <div class="col-md-9 pr-md-9">
