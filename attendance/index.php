@@ -10,8 +10,11 @@
                 <div class="text mt-5">
                     <span class="subheading">WELCOME TO PG FORMS</span>
                     <h2 class="mb-3"> <span>FOR GUIDANCE ON </span> <span>ATTENDANCE</span></h2>
-                    <p>Click Yes if you want to make an attendance form or Next continue if not what you are looking for</p>
-                    <p><a href="application.php" class="btn btn-primary px-4 py-3">Yes</a> <a href="#" class="btn btn-primary px-4 py-3">Next</a></p>
+                    <p>Welcome to PG School Attendance Registration page. We would guide you in filling out these forms.</p>
+                    <!-- Had to change this and take the user straight to making a choice for the
+                    forms to fill. There was no real UX need for taking users to .attendance.php -->
+                    <!-- <p><a href="attendance.php" class="btn btn-primary px-4 py-3">Start Here</a> -->
+                    <p><a href="choice.php" class="btn btn-primary px-4 py-3">Start Here</a>
                 </div>
             </div>
         </div>
