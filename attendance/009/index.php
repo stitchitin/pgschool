@@ -172,11 +172,35 @@
                 <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST"){
                         include '../../include/config.php';
-                        if (isset($_POST['full_name'])) {
-                            $full_name = $_POST['full_name'];
+                        if (isset($_POST['department'])) {
+                            $department = $_POST['department'];
                         }
-                        if (isset($_POST['phone_number'])) {
-                            $phone_number = $_POST['phone_number'];
+                        if (isset($_POST['faculty'])) {
+                            $faculty = $_POST['faculty'];
+                        }
+                        if (isset($_POST['academic_session'])) {
+                            $academic_session = $_POST['academic_session'];
+                        }
+                        if (isset($_POST['semester'])) {
+                            $semester = $_POST['semester'];
+                        }
+                        if (isset($_POST['course_code'])) {
+                            $course_code = $_POST['course_code'];
+                        }
+                        if (isset($_POST['course_title'])) {
+                            $course_title = $_POST['course_title'];
+                        }
+                        if (isset($_POST['student_reg_number'])) {
+                            $student_reg_number = $_POST['student_reg_number'];
+                        }
+                        if (isset($_POST['student_name'])) {
+                            $student_name = $_POST['student_name'];
+                        }
+                        if (isset($_POST['lecture_date'])) {
+                            $lecture_date = $_POST['lecture_date'];
+                        }
+                        if (isset($_POST['course_lecturer'])) {
+                            $course_lecturer = $_POST['course_lecturer'];
                         }
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -184,17 +208,16 @@
                         if (!$conn) {
                             die("Connection failed: " . mysqli_connect_error());
                         }
-                        $sql = "INSERT INTO form004 (
-                                full_name
+                        $sql = "INSERT INTO 'form009' (
+                                department, faculty, academic_session, semester, course_code, course_title, student_reg_number, student_name, lecture_date, course_lecturer
                             )
                             VALUES (
-                                '$full_name'
+                                '$department', '$faculty', '$academic_session', '$semester', '$course_code', '$course_title', '$student_reg_number', '$student_name', '$lecture_date', '$course_lecturer'
                             )";
 
                         if (mysqli_query($conn, $sql)) {
                             echo "<b style='color:green'>";
-                            echo $full_name;
-                            echo " you form has been created successfully ";
+                            echo "Form submitted successfully";
                             echo "</b>";
                         } else {
                             echo "<b style='color:red'> ";
@@ -211,51 +234,56 @@
                         <div style="text-align:center">
                             <h3>Attendance Form Information</h3>
                         </div>
-                        <div class="row block-12">
-                            <div class="col-md-6 pr-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="department" placeholder="Department:">
+                        <!-- Div content for default form values start -->
+                        <div>
+                            <div class="row block-12">
+                                <div class="col-md-6 pr-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="department" placeholder="Department:">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="faculty" placeholder="Faculty:">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="faculty" placeholder="Faculty:">
+                                <div class="col-md-6 pr-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="academic_session" placeholder="Academic Session:">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="semester"
+                                            placeholder="Semester:">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 pr-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="academic_session" placeholder="Academic Session:">
+                            <div class="row block-12">
+                                <div class="col-md-3 pr-md-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="course_code" placeholder="Course Code:">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="semester"
-                                        placeholder="Semester:">
+                                <div class="col-md-9 pr-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="course_title"
+                                            placeholder="Course Title:">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row block-12">
+                                <div class="col-md-3 pr-md-3">
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" name="lecture_date" >
+                                    </div>
+                                </div>
+                                <div class="col-md-9 pr-md-9">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="course_lecturer"
+                                            placeholder="Course Lecturer:">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row block-12">
-                            <div class="col-md-3 pr-md-3">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="course_code" placeholder="Course Code:">
-                                </div>
-                            </div>
-                            <div class="col-md-9 pr-md-9">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="course_title"
-                                        placeholder="Course Title:">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row block-12">
-                            <div class="col-md-3 pr-md-3">
-                                <div class="form-group">
-                                    <input type="date" class="form-control" name="lecture_date" >
-                                </div>
-                            </div>
-                            <div class="col-md-9 pr-md-9">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="course_lecturer"
-                                        placeholder="Course Lecturer:">
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Div content for default form values end -->
+                        <!-- Div content for dynamic student form values start -->
                         <div class="row block-12">
                             <div class="col-md-3 pr-md-3">
                                 <div class="form-group">
@@ -269,6 +297,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Div content for dynamic student form values end -->
                     </div>
                     <!-- I did not implement the form wizard fxn, felt no UX need -->
                     <button class="btn btn-primary py-3 px-5" id="nextBtn" type="button">Submit</button>
@@ -301,25 +330,4 @@
         <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js"
             data-cf-settings="20b60bcd3cfe9b2f912c55b7-|49" defer=""></script>
     </body>
-    <script>
-        function previewFile() {
-            var preview = document.querySelector('#passportImg');
-            var file = document.querySelector('#passportFile').files[0];
-            var reader = new FileReader();
-
-            reader.addEventListener("load", function() {
-                preview.src = reader.result;
-            }, false);
-
-            if (file) {
-                reader.readAsDataURL(file);
-            }
-        }
-
-        // Add the following code if you want the name of the file appear on select
-        document.querySelector("#passportFile").addEventListener("change", function() {
-            var fileName = document.querySelector("#passportFile").value.split("\\").pop();
-            document.querySelector("#passportLabel").innerText = fileName;
-        });
-    </script>
 </html>
