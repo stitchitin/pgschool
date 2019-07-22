@@ -7,32 +7,6 @@
             <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
             </div>
         </div>
-        <!-- <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-                            <div class="text"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-                            <div class="text"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-                            <div class="text"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-                            <div class="text"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </section>
 <!-- Attendance Forms Selection Section Start -->

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-
     <head>
         <title>WELCOME TO PG School Attendance Form 009</title>
         <meta charset="utf-8">
@@ -124,6 +123,10 @@
             .raddiiomale {
                 margin-left: 4rem;
             }
+
+            .student-entry {
+                display: block;
+            }
         </style>
     </head>
 
@@ -204,27 +207,29 @@
                         }
                         // Create connection
                         $conn = mysqli_connect($servername, $username, $password, $dbname);
-                        // Check connection
-                        if (!$conn) {
-                            die("Connection failed: " . mysqli_connect_error());
-                        }
-                        $sql = "INSERT INTO 'form009' (
+                        // Create SQL query
+                        $sql = "INSERT INTO form009 (
                                 department, faculty, academic_session, semester, course_code, course_title, student_reg_number, student_name, lecture_date, course_lecturer
                             )
                             VALUES (
                                 '$department', '$faculty', '$academic_session', '$semester', '$course_code', '$course_title', '$student_reg_number', '$student_name', '$lecture_date', '$course_lecturer'
                             )";
-
-                        if (mysqli_query($conn, $sql)) {
-                            echo "<b style='color:green'>";
-                            echo "Form submitted successfully";
-                            echo "</b>";
+                        // Check connection
+                        if (!$conn) {
+                            die("Connection failed: " . mysqli_connect_error());
                         } else {
-                            echo "<b style='color:red'> ";
-                            echo "Error: " . mysqli_error($conn);
-                            echo "<b>";
-                        }
-                        mysqli_close($conn);
+                            if (mysqli_query($conn, $sql)) {
+                                echo "<b style='color:green'>";
+                                echo "Form submitted successfully";
+                                echo "</b>";
+                                // TODO: Refresh the page or redirect to specific page
+                            } else {
+                                echo "<b style='color:red'> ";
+                                echo "Error: " . mysqli_error($conn);
+                                echo "<b>";
+                            }
+                            mysqli_close($conn);                                
+                        } 
                     }
                 ?>
 
@@ -284,23 +289,26 @@
                         </div>
                         <!-- Div content for default form values end -->
                         <!-- Div content for dynamic student form values start -->
-                        <div class="row block-12">
-                            <div class="col-md-3 pr-md-3">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="student_reg_number" placeholder="Student Reg Number:" >
-                                </div>
+                        <div class="row block-12 form-group" id="dynamicStudentEntry">
+                            <div class="col-md-12">
+                                <button type="button" id="btnAdd" class="btn btn-primary">Add Student Attendance</button>
                             </div>
-                            <div class="col-md-9 pr-md-9">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="student_name"
-                                        placeholder="Student Name:">
+                            <div class="row group block-12 form-group">
+                                <div class="col-md-3 pr-md-3">
+                                    <input type="text" class="form-control" name="student_reg_number[]" placeholder="Student Reg Number:" >
+                                </div>
+                                <div class="col-md-7 pr-md-7">
+                                    <input type="text" class="form-control" name="student_name[]" placeholder="Student Name:">
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-danger btnRemove">Remove</button>
                                 </div>
                             </div>
                         </div>
                         <!-- Div content for dynamic student form values end -->
                     </div>
                     <!-- I did not implement the form wizard fxn, felt no UX need -->
-                    <button class="btn btn-primary py-3 px-5" id="nextBtn" type="button">Submit</button>
+                    <button class="btn btn-primary py-3 px-5" type="submit">Submit</button>
                     <!-- <button class="btn btn-primary py-3 px--55" id="nextBtn" type="button">Add Record</button> -->
                 </form>
             </div>
@@ -320,14 +328,21 @@
         <script src="../../js/bootstrap-datepicker.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script src="../../js/jquery.timepicker.min.html" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script src="../../js/scrollax.min.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"
-            type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script src="../../js/google-map.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script src="../../js/main.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script src="../../js/form.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
             type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
-        <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js"
-            data-cf-settings="20b60bcd3cfe9b2f912c55b7-|49" defer=""></script>
-    </body>
+        <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="20b60bcd3cfe9b2f912c55b7-|49" defer=""></script>
+        <script src="../../js/jquery.multifield.min.js" type="text/javascript"></script>
+        
+        <script>
+            $('#dynamicStudentEntry').multifield({
+                section: '.group',
+                btnAdd:'#btnAdd',
+                btnRemove:'.btnRemove',
+            });
+        </script> 
+    </body>   
 </html>
