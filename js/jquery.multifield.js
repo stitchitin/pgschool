@@ -52,13 +52,12 @@
 			var $this = this; //Plugin object
 			// Introduce defaults that can be extended either
 			// globally or using an object literal.
-			this.config = $.extend({}, this.defaults, this.options,
-				this.metadata);
+			this.config = $.extend({}, this.defaults, this.options, this.metadata);
 
 			// Load localization object
-      if(this.config.locale !== 'default'){
-  			$this.localize_i18n = this.config.locale;
-      }
+      		if(this.config.locale !== 'default'){
+				$this.localize_i18n = this.config.locale;
+      		}
 
 			// Hide 'Remove' buttons if only one section exists
 			if(this.getSectionsCount()<2) {
@@ -147,7 +146,5 @@
 			new multiField(this, options).init();
 		});
 	};
-
-
-
+	
 })( jQuery, window, document );

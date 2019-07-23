@@ -124,9 +124,9 @@
                 margin-left: 4rem;
             }
 
-            /* .student-entry {
-                display: block;
-            } */
+            .student-entry {
+                display: flex;
+            }
         </style>
     </head>
 
@@ -356,18 +356,18 @@
                                 </div>
                             </div>
                             <!-- <div class="row group block-12 form-group"> -->
-                            <div class="col-md-12 pr-md-12 student-entry">
+                            <div class="row col-md-12 pr-md-12 student-entry" style="display: flex;">
                                 <div class="col-md-3 pr-md-3">
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="student_reg_number[]" placeholder="Student Reg Number:" >
                                     </div>
                                 </div>
-                                <div class="col-md-5 pr-md-5">
+                                <div class="col-md-8 pr-md-8">
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="student_name[]" placeholder="Student Name:" >
                                     </div>
                                 </div>
-                                <div class="col-md-2 pr-md-2">
+                                <div class="col-md-1 pr-md-1">
                                     <button type="button" class="btn btn-danger btnRemove">Remove</button>
                                 </div>
                             </div>
@@ -400,8 +400,10 @@
         <script src="../../js/form.js" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="20b60bcd3cfe9b2f912c55b7-text/javascript"></script>
         <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="20b60bcd3cfe9b2f912c55b7-|49" defer=""></script>
-        <script src="../../js/jquery-2.2.4.min.js" type="text/javascript"></script>
-        <script src="../../js/jquery.multifield.min.js" type="text/javascript"></script>        
+        <!-- <script src="../../js/jquery-2.2.4.min.js" type="text/javascript"></script> -->
+        <!-- <script src="../../js/jquery.multifield.min.js" type="text/javascript"></script>   -->
+        <script src="../../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="../../js/jquery.multifield.js" type="text/javascript"></script>       
         <script>
             $('#dynamicStudentEntry').multifield({
                 section: '.student-entry',
